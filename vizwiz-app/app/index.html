@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="vizwiz" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="vizwiz" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="vizwiz" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="vizwiz" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Visualization Wizard</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- build:css assets/css/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap-css-only/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
+    <!-- endbower -->
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <!-- endbuild -->
+
+    <!-- build:css assets/css/vizwiz.css -->
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <link rel="stylesheet" href="assets/css/form.css"/>
+    <link rel="stylesheet" href="assets/css/results.css">
+    <link rel="stylesheet" type="text/css" href="assets/lib/angular-tree-widget-master/angular-tree-widget.min.css">
+    <!-- endbuild -->
+</head>
+<style>
+    [ng-cloak],
+    [data-ng-cloak] {
+        display: none;
+    }
+
+    [ng-click],
+    [data-ng-click] {
+        cursor: pointer;
+    }
+</style>
+<body ng-cloak>
+
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div id="banner" class="banner">
+    <a href="#" class="title">Visualization Wizard</a>
+</div>
+<div ui-view></div>
+<div class="footer">Copyright &copy; 2016 Leidos, Inc. All rights reserved.</div>
+
+<!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+
+<!-- build:js js/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="bower_components/underscore/underscore.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-recursion/angular-recursion.js"></script>
+<!-- endbower -->
+<script type="text/javascript" src="assets/lib/angular-tree-widget-master/angular-tree-widget.min.js"></script>
+<!-- endbuild -->
+
+<!-- add any new scripts below -->
+<!-- build:js js/vizwiz.js -->
+<script src="app.js"></script>
+<script src="app.routes.js"></script>
+<script src="vizwiz/vizwiz.controller.js"></script>
+<script src="vizwiz/services/question-analysis.service.js"></script>
+<script src="vizwiz/services/word2vec.service.js"></script>
+<script src="vizwiz/services/topic-matching.service.js"></script>
+<script src="vizwiz/services/data-set-ranking.service.js"></script>
+<script src="common/color.service.js"></script>
+<script src="vizwiz/services/modeler.service.js"></script>
+<!-- endbuild -->
+</body>
+</html>

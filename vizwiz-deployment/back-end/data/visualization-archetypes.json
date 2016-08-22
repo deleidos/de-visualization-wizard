@@ -1,0 +1,1290 @@
+    {
+      "name": "Histogram",
+      "encodings": {
+        "position": 1,
+        "labels": 1,
+        "length": 1,
+        "area": 0,
+        "angle": 0,
+        "pattern_density": 0,
+        "pattern_texture": 0,
+        "weight": 0,
+        "saturation": 0,
+        "color": 0.5,
+        "shape": 0,
+        "enclosure": 0,
+        "connection": 0,
+        "line_pattern": 0,
+        "line_endings": 0,
+        "line_weight": 0
+      },
+      "min_vars": 2,
+      "non_quant_var_rqd": true,
+      "visual_classifications": [
+        "chart"
+      ],
+      "intents": [
+        "distribution"
+      ]
+    }
+    {
+      "name": "Bar Chart",
+      "encodings": {
+        "position": 1,
+        "labels": 1,
+        "length": 1,
+        "area": 0,
+        "angle": 0,
+        "pattern_density": 0,
+        "pattern_texture": 0.5,
+        "weight": 0,
+        "saturation": 0,
+        "color": 0.5,
+        "shape": 0,
+        "enclosure": 0,
+        "connection": 0,
+        "line_pattern": 0,
+        "line_endings": 0,
+        "line_weight": 0
+      },
+      "min_vars": 2,
+      "non_quant_var_rqd": true,
+      "visual_classifications": [
+        "chart"
+      ],
+      "intents": [
+        "comparison",
+        "distribution"
+      ]
+    }
+    {
+      "name": "Pie Chart",
+      "encodings": {
+        "position": 0,
+        "labels": 1,
+        "length": 0,
+        "area": 1,
+        "angle": 1,
+        "pattern_density": 0,
+        "pattern_texture": 0.5,
+        "weight": 0,
+        "saturation": 0,
+        "color": 1,
+        "shape": 0,
+        "enclosure": 0,
+        "connection": 0,
+        "line_pattern": 0,
+        "line_endings": 0,
+        "line_weight": 0
+      },
+      "min_vars": 1,
+      "non_quant_var_rqd": true,
+      "visual_classifications": [
+        "chart"
+      ],
+      "intents": [
+        "composition",
+        "comparison"
+      ]
+    }
+    {
+      "name": "Line Chart",
+      "encodings": {
+        "position": 1,
+        "labels": 1,
+        "length": 1,
+        "area": 0,
+        "angle": 0,
+        "pattern_density": 0,
+        "pattern_texture": 0,
+        "weight": 0,
+        "saturation": 0,
+        "color": 0.5,
+        "shape": 0,
+        "enclosure": 0,
+        "connection": 0,
+        "line_pattern": 0.5,
+        "line_endings": 0.5,
+        "line_weight": 0.5
+      },
+      "min_vars": 2,
+      "non_quant_var_rqd": false,
+      "visual_classifications": [
+        "chart",
+        "temporal"
+      ],
+      "intents": [
+        "comparison"
+      ]
+    }
+    {
+      "name": "Bubble Chart",
+      "encodings": {
+        "position": 1,
+        "labels": 1,
+        "length": 0,
+        "area": 1,
+        "angle": 0,
+        "pattern_density": 0,
+        "pattern_texture": 0,
+        "weight": 0,
+        "saturation": 0,
+        "color": 0.5,
+        "shape": 0.5,
+        "enclosure": 0,
+        "connection": 0,
+        "line_pattern": 0,
+        "line_endings": 0,
+        "line_weight": 0
+      },
+      "min_vars": 3,
+      "non_quant_var_rqd": true,
+      "visual_classifications": [
+        "chart",
+        "temporal"
+      ],
+      "intents": [
+        "distribution",
+        "comparison"
+      ]
+    }
+    {
+      "name": "Polar Area Diagram",
+      "encodings": {
+        "position": 1,
+        "labels": 1,
+        "length": 0,
+        "area": 1,
+        "angle": 1,
+        "pattern_density": 0,
+        "pattern_texture": 0,
+        "weight": 0,
+        "saturation": 0,
+        "color": 0.5,
+        "shape": 0,
+        "enclosure": 0,
+        "connection": 0,
+        "line_pattern": 0,
+        "line_endings": 0,
+        "line_weight": 0
+      },
+      "min_vars": 2,
+      "non_quant_var_rqd": true,
+      "visual_classifications": [
+        "chart"
+      ],
+      "intents": [
+        "distribution",
+        "comparison"
+      ]
+    }
+    {
+      "name": "Venn Diagram",
+      "encodings": {
+        "position": 1,
+        "labels": 1,
+        "length": 0,
+        "area": 0,
+        "angle": 0,
+        "pattern_density": 0,
+        "pattern_texture": 0,
+        "weight": 0,
+        "saturation": 0,
+        "color": 0,
+        "shape": 0,
+        "enclosure": 1,
+        "connection": 0,
+        "line_pattern": 0,
+        "line_endings": 0,
+        "line_weight": 0
+      },
+      "min_vars": 2,
+      "non_quant_var_rqd": true,
+      "visual_classifications": [
+        "chart"
+      ],
+      "intents": [
+        "relationship",
+        "comparison"
+      ]
+    }
+    {
+      "name": "Scatter Plot",
+      "encodings": {
+        "position": 1,
+        "labels": 1,
+        "length": 0,
+        "area": 0,
+        "angle": 0,
+        "pattern_density": 0,
+        "pattern_texture": 0,
+        "weight": 0,
+        "saturation": 0,
+        "color": 0.5,
+        "shape": 0,
+        "enclosure": 0,
+        "connection": 0,
+        "line_pattern": 0,
+        "line_endings": 0,
+        "line_weight": 0
+      },
+      "min_vars": 2,
+      "non_quant_var_rqd": false,
+      "visual_classifications": [
+        "chart",
+        "temporal"
+      ],
+      "intents": [
+        "distribution",
+        "comparison"
+      ]
+    }
+    {
+      "name": "Word Cloud",
+      "encodings": {
+        "position": 1,
+        "labels": 1,
+        "length": 0,
+        "area": 1,
+        "angle": 0,
+        "pattern_density": 0,
+        "pattern_texture": 0,
+        "weight": 1,
+        "saturation": 0.5,
+        "color": 0.5,
+        "shape": 0,
+        "enclosure": 0,
+        "connection": 0,
+        "line_pattern": 0,
+        "line_endings": 0,
+        "line_weight": 0
+      },
+      "min_vars": 1,
+      "non_quant_var_rqd": true,
+      "visual_classifications": [
+        "chart"
+      ],
+      "intents": [
+        "relationship",
+        "composition"
+      ]
+    }
+    {
+      "name": "Area Chart",
+      "encodings": {
+        "position": 0,
+        "labels": 1,
+        "length": 0,
+        "area": 1,
+        "angle": 0,
+        "pattern_density": 0,
+        "pattern_texture": 0,
+        "weight": 0,
+        "saturation": 0,
+        "color": 0.5,
+        "shape": 0,
+        "enclosure": 0,
+        "connection": 0,
+        "line_pattern": 0,
+        "line_endings": 0,
+        "line_weight": 0
+      },
+      "min_vars": 3,
+      "non_quant_var_rqd": false,
+      "visual_classifications": [
+        "chart"
+      ],
+      "intents": [
+        "distribution",
+        "composition"
+      ]
+    }
+    {
+      "name": "Box Plot",
+      "encodings": {
+        "position": 1,
+        "labels": 1,
+        "length": 1,
+        "area": 0,
+        "angle": 0,
+        "pattern_density": 0,
+        "pattern_texture": 0,
+        "weight": 0,
+        "saturation": 0,
+        "color": 0,
+        "shape": 0,
+        "enclosure": 1,
+        "connection": 0,
+        "line_pattern": 0,
+        "line_endings": 0,
+        "line_weight": 0
+      },
+      "min_vars": 1,
+      "non_quant_var_rqd": false,
+      "visual_classifications": [
+        "chart"
+      ],
+      "intents": [
+        "distribution"
+      ]
+    }
+    {
+      "name": "Choropleth Map",
+      "encodings": {
+        "position": 1,
+        "labels": 0.5,
+        "length": 0,
+        "area": 1,
+        "angle": 0,
+        "pattern_density": 0,
+        "pattern_texture": 0,
+        "weight": 0,
+        "saturation": 0.5,
+        "color": 0,
+        "shape": 0,
+        "enclosure": 0,
+        "connection": 0,
+        "line_pattern": 0,
+        "line_endings": 0,
+        "line_weight": 0
+      },
+      "min_vars": 2,
+      "non_quant_var_rqd": false,
+      "visual_classifications": [
+        "map"
+      ],
+      "intents": [
+        "distribution"
+      ]
+    }
+    {
+      "name": "Cartogram",
+      "encodings": {
+        "position": 1,
+        "labels": 0,
+        "length": 0,
+        "area": 1,
+        "angle": 0,
+        "pattern_density": 0,
+        "pattern_texture": 0,
+        "weight": 0,
+        "saturation": 0.5,
+        "color": 0.5,
+        "shape": 0,
+        "enclosure": 0,
+        "connection": 0,
+        "line_pattern": 0,
+        "line_endings": 0,
+        "line_weight": 0
+      },
+      "min_vars": 2,
+      "non_quant_var_rqd": false,
+      "visual_classifications": [
+        "map"
+      ],
+      "intents": [
+        "distribution",
+        "composition",
+        "comparison"
+      ]
+    }
+    {
+      "name": "Dot Distribution Map",
+      "encodings": {
+        "position": 1,
+        "labels": 0.5,
+        "length": 0,
+        "area": 0.5,
+        "angle": 0,
+        "pattern_density": 0,
+        "pattern_texture": 0,
+        "weight": 0,
+        "saturation": 0,
+        "color": 0.5,
+        "shape": 0,
+        "enclosure": 0,
+        "connection": 0,
+        "line_pattern": 0,
+        "line_endings": 0,
+        "line_weight": 0
+      },
+      "min_vars": 2,
+      "non_quant_var_rqd": false,
+      "visual_classifications": [
+        "map"
+      ],
+      "intents": [
+        "distribution",
+        "composition"
+      ]
+    }
+    {
+      "name": "Proportional Symbol Map",
+      "encodings": {
+        "position": 1,
+        "labels": 0.5,
+        "length": 0,
+        "area": 1,
+        "angle": 0,
+        "pattern_density": 0,
+        "pattern_texture": 0,
+        "weight": 0,
+        "saturation": 0,
+        "color": 0.5,
+        "shape": 1,
+        "enclosure": 0,
+        "connection": 0,
+        "line_pattern": 0,
+        "line_endings": 0,
+        "line_weight": 0
+      },
+      "min_vars": 3,
+      "non_quant_var_rqd": false,
+      "visual_classifications": [
+        "map"
+      ],
+      "intents": [
+        "distribution",
+        "comparison",
+        "composition"
+      ]
+    }
+    {
+      "name": "Contour Map",
+      "encodings": {
+        "position": 1,
+        "labels": 1,
+        "length": 0,
+        "area": 1,
+        "angle": 0,
+        "pattern_density": 0,
+        "pattern_texture": 0,
+        "weight": 0,
+        "saturation": 1,
+        "color": 0,
+        "shape": 0,
+        "enclosure": 1,
+        "connection": 0,
+        "line_pattern": 0,
+        "line_endings": 0,
+        "line_weight": 0
+      },
+      "min_vars": 2,
+      "non_quant_var_rqd": false,
+      "visual_classifications": [
+        "map"
+      ],
+      "intents": [
+        "composition"
+      ]
+    }
+    {
+      "name": "Timeline",
+      "encodings": {
+        "position": 1,
+        "labels": 1,
+        "length": 1,
+        "area": 0,
+        "angle": 0,
+        "pattern_density": 0,
+        "pattern_texture": 0,
+        "weight": 0,
+        "saturation": 0,
+        "color": 0,
+        "shape": 0,
+        "enclosure": 0,
+        "connection": 1,
+        "line_pattern": 0,
+        "line_endings": 0,
+        "line_weight": 0
+      },
+      "min_vars": 2,
+      "non_quant_var_rqd": true,
+      "visual_classifications": [
+        "temporal"
+      ],
+      "intents": [
+        "composition"
+      ]
+    }
+    {
+      "name": "Stream Graph",
+      "encodings": {
+        "position": 0,
+        "labels": 1,
+        "length": 1,
+        "area": 1,
+        "angle": 0,
+        "pattern_density": 0,
+        "pattern_texture": 0,
+        "weight": 1,
+        "saturation": 0.5,
+        "color": 1,
+        "shape": 0,
+        "enclosure": 0,
+        "connection": 0,
+        "line_pattern": 0,
+        "line_endings": 0,
+        "line_weight": 0
+      },
+      "min_vars": 3,
+      "non_quant_var_rqd": true,
+      "visual_classifications": [
+        "chart",
+        "temporal"
+      ],
+      "intents": [
+        "composition",
+        "comparison"
+      ]
+    }
+    {
+      "name": "Arc Diagram",
+      "encodings": {
+        "position": 0,
+        "labels": 1,
+        "length": 0,
+        "area": 0,
+        "angle": 0,
+        "pattern_density": 0,
+        "pattern_texture": 0,
+        "weight": 0,
+        "saturation": 0,
+        "color": 0.5,
+        "shape": 0,
+        "enclosure": 0,
+        "connection": 1,
+        "line_pattern": 0,
+        "line_endings": 1,
+        "line_weight": 0.5
+      },
+      "min_vars": 1,
+      "non_quant_var_rqd": true,
+      "visual_classifications": [
+        "network",
+        "matrix"
+      ],
+      "intents": [
+        "relationship"
+      ]
+    }
+    {
+      "name": "Sankey Diagram",
+      "encodings": {
+        "position": 1,
+        "labels": 1,
+        "length": 1,
+        "area": 1,
+        "angle": 0,
+        "pattern_density": 0,
+        "pattern_texture": 0,
+        "weight": 1,
+        "saturation": 0.5,
+        "color": 0.5,
+        "shape": 0,
+        "enclosure": 0,
+        "connection": 0,
+        "line_pattern": 0,
+        "line_endings": 1,
+        "line_weight": 0
+      },
+      "min_vars": 2,
+      "non_quant_var_rqd": true,
+      "visual_classifications": [
+        "tree"
+      ],
+      "intents": [
+        "composition"
+      ]
+    }
+    {
+      "name": "Alluvial Diagram",
+      "encodings": {
+        "position": 0,
+        "labels": 1,
+        "length": 0,
+        "area": 1,
+        "angle": 0,
+        "pattern_density": 0,
+        "pattern_texture": 0,
+        "weight": 0,
+        "saturation": 0.5,
+        "color": 0.5,
+        "shape": 0,
+        "enclosure": 0,
+        "connection": 1,
+        "line_pattern": 0,
+        "line_endings": 0,
+        "line_weight": 1
+      },
+      "min_vars": 3,
+      "non_quant_var_rqd": true,
+      "visual_classifications": [
+        "tree",
+        "temporal"
+      ],
+      "intents": [
+        "composition",
+        "comparison"
+      ]
+    }
+    {
+      "name": "Tree Map",
+      "encodings": {
+        "position": 1,
+        "labels": 1,
+        "length": 0,
+        "area": 1,
+        "angle": 0,
+        "pattern_density": 0,
+        "pattern_texture": 0,
+        "weight": 0,
+        "saturation": 0.5,
+        "color": 0.5,
+        "shape": 0,
+        "enclosure": 1,
+        "connection": 0,
+        "line_pattern": 0,
+        "line_endings": 0,
+        "line_weight": 0
+      },
+      "min_vars": 3,
+      "non_quant_var_rqd": true,
+      "visual_classifications": [
+        "tree"
+      ],
+      "intents": [
+        "composition",
+        "relationship"
+      ]
+    }
+    {
+      "name": "Heat Map",
+      "encodings": {
+        "position": 1,
+        "labels": 0,
+        "length": 0,
+        "area": 1,
+        "angle": 0,
+        "pattern_density": 0,
+        "pattern_texture": 0,
+        "weight": 0,
+        "saturation": 1,
+        "color": 0,
+        "shape": 0,
+        "enclosure": 0,
+        "connection": 0,
+        "line_pattern": 0,
+        "line_endings": 0,
+        "line_weight": 0
+      },
+      "min_vars": 3,
+      "non_quant_var_rqd": true,
+      "visual_classifications": [
+        "matrix",
+        "chart"
+      ],
+      "intents": [
+        "composition",
+        "distribution"
+      ]
+    }
+    {
+      "name": "Parallel Set",
+      "encodings": {
+        "position": 0,
+        "labels": 1,
+        "length": 0,
+        "area": 1,
+        "angle": 0,
+        "pattern_density": 0,
+        "pattern_texture": 0,
+        "weight": 1,
+        "saturation": 0,
+        "color": 1,
+        "shape": 0,
+        "enclosure": 0,
+        "connection": 1,
+        "line_pattern": 0,
+        "line_endings": 0,
+        "line_weight": 1
+      },
+      "min_vars": 2,
+      "non_quant_var_rqd": true,
+      "visual_classifications": [
+        "chart",
+        "tree"
+      ],
+      "intents": [
+        "composition",
+        "comparison"
+      ]
+    }
+    {
+      "name": "Radar Chart",
+      "encodings": {
+        "position": 1,
+        "labels": 1,
+        "length": 0,
+        "area": 1,
+        "angle": 1,
+        "pattern_density": 0,
+        "pattern_texture": 0,
+        "weight": 0,
+        "saturation": 0,
+        "color": 0.5,
+        "shape": 0,
+        "enclosure": 0,
+        "connection": 0,
+        "line_pattern": 0,
+        "line_endings": 0,
+        "line_weight": 0
+      },
+      "min_vars": 2,
+      "non_quant_var_rqd": true,
+      "visual_classifications": [
+        "chart"
+      ],
+      "intents": [
+        "comparison"
+      ]
+    }
+    {
+      "name": "Dendogram",
+      "encodings": {
+        "position": 1,
+        "labels": 1,
+        "length": 0,
+        "area": 0,
+        "angle": 0,
+        "pattern_density": 0,
+        "pattern_texture": 0,
+        "weight": 0,
+        "saturation": 0,
+        "color": 0,
+        "shape": 0,
+        "enclosure": 0,
+        "connection": 1,
+        "line_pattern": 0,
+        "line_endings": 1,
+        "line_weight": 0.5
+      },
+      "min_vars": 2,
+      "non_quant_var_rqd": true,
+      "visual_classifications": [
+        "tree"
+      ],
+      "intents": [
+        "relationship",
+        "composition",
+        "distribution"
+      ]
+    }
+    {
+      "name": "Radial Tree",
+      "encodings": {
+        "position": 1,
+        "labels": 1,
+        "length": 0,
+        "area": 0,
+        "angle": 0,
+        "pattern_density": 0,
+        "pattern_texture": 0,
+        "weight": 0,
+        "saturation": 0,
+        "color": 0,
+        "shape": 0,
+        "enclosure": 0,
+        "connection": 1,
+        "line_pattern": 0,
+        "line_endings": 1,
+        "line_weight": 0.5
+      },
+      "min_vars": 1,
+      "non_quant_var_rqd": true,
+      "visual_classifications": [
+        "matrix"
+      ],
+      "intents": [
+        "relationship"
+      ]
+    }
+    {
+      "name": "Hyperbolic Tree",
+      "encodings": {
+        "position": 1,
+        "labels": 1,
+        "length": 0,
+        "area": 0,
+        "angle": 0,
+        "pattern_density": 0,
+        "pattern_texture": 0,
+        "weight": 0,
+        "saturation": 0,
+        "color": 0,
+        "shape": 0,
+        "enclosure": 0,
+        "connection": 1,
+        "line_pattern": 0,
+        "line_endings": 1,
+        "line_weight": 0.5
+      },
+      "min_vars": 1,
+      "non_quant_var_rqd": true,
+      "visual_classifications": [
+        "tree"
+      ],
+      "intents": [
+        "relationship"
+      ]
+    }
+    {
+      "name": "Matrix",
+      "encodings": {
+        "position": 1,
+        "labels": 1,
+        "length": 0,
+        "area": 0,
+        "angle": 0,
+        "pattern_density": 0,
+        "pattern_texture": 0,
+        "weight": 0,
+        "saturation": 0.5,
+        "color": 0.5,
+        "shape": 0,
+        "enclosure": 0,
+        "connection": 0,
+        "line_pattern": 0,
+        "line_endings": 0,
+        "line_weight": 0
+      },
+      "min_vars": 2,
+      "non_quant_var_rqd": true,
+      "visual_classifications": [
+        "matrix"
+      ],
+      "intents": [
+        "relationship"
+      ]
+    }
+    {
+      "name": "Node-Link Diagram",
+      "encodings": {
+        "position": 0,
+        "labels": 1,
+        "length": 0,
+        "area": 0,
+        "angle": 0,
+        "pattern_density": 0,
+        "pattern_texture": 0,
+        "weight": 0,
+        "saturation": 0,
+        "color": 0.5,
+        "shape": 0.5,
+        "enclosure": 0,
+        "connection": 1,
+        "line_pattern": 0,
+        "line_endings": 1,
+        "line_weight": 0.5
+      },
+      "min_vars": 1,
+      "non_quant_var_rqd": true,
+      "visual_classifications": [
+        "network",
+        "tree"
+      ],
+      "intents": [
+        "relationship"
+      ]
+    }
+    {
+      "name": "Dependency Graph",
+      "encodings": {
+        "position": 1,
+        "labels": 1,
+        "length": 0,
+        "area": 0,
+        "angle": 0,
+        "pattern_density": 0,
+        "pattern_texture": 0,
+        "weight": 0,
+        "saturation": 0,
+        "color": 0,
+        "shape": 0,
+        "enclosure": 0,
+        "connection": 1,
+        "line_pattern": 0,
+        "line_endings": 1,
+        "line_weight": 0.5
+      },
+      "min_vars": 1,
+      "non_quant_var_rqd": true,
+      "visual_classifications": [
+        "tree",
+        "network"
+      ],
+      "intents": [
+        "relationship"
+      ]
+    }
+    {
+      "name": "Marimekko Chart",
+      "encodings": {
+        "position": 0,
+        "labels": 1,
+        "length": 0,
+        "area": 1,
+        "angle": 0,
+        "pattern_density": 0,
+        "pattern_texture": 0,
+        "weight": 0,
+        "saturation": 0.5,
+        "color": 0.5,
+        "shape": 0,
+        "enclosure": 0,
+        "connection": 0,
+        "line_pattern": 0,
+        "line_endings": 0,
+        "line_weight": 0
+      },
+      "min_vars": 3,
+      "non_quant_var_rqd": true,
+      "visual_classifications": [
+        "chart",
+        "matrix"
+      ],
+      "intents": [
+        "composition",
+        "comparison"
+      ]
+    }
+    {
+      "name": "Waterfall Chart",
+      "encodings": {
+        "position": 1,
+        "labels": 1,
+        "length": 1,
+        "area": 0,
+        "angle": 0,
+        "pattern_density": 0,
+        "pattern_texture": 0,
+        "weight": 0,
+        "saturation": 0,
+        "color": 1,
+        "shape": 0,
+        "enclosure": 0,
+        "connection": 0,
+        "line_pattern": 0,
+        "line_endings": 0,
+        "line_weight": 0
+      },
+      "min_vars": 2,
+      "non_quant_var_rqd": true,
+      "visual_classifications": [
+        "chart",
+        "temporal"
+      ],
+      "intents": [
+        "composition"
+      ]
+    }
+    {
+      "name": "Biplot",
+      "encodings": {
+        "position": 1,
+        "labels": 1,
+        "length": 1,
+        "area": 0,
+        "angle": 1,
+        "pattern_density": 0,
+        "pattern_texture": 0,
+        "weight": 0,
+        "saturation": 0,
+        "color": 0.5,
+        "shape": 0,
+        "enclosure": 0,
+        "connection": 0,
+        "line_pattern": 0,
+        "line_endings": 1,
+        "line_weight": 0
+      },
+      "min_vars": 3,
+      "non_quant_var_rqd": true,
+      "visual_classifications": [
+        "chart"
+      ],
+      "intents": [
+        "distribution"
+      ]
+    }
+    {
+      "name": "C-Chart",
+      "encodings": {
+        "position": 1,
+        "labels": 1,
+        "length": 1,
+        "area": 0,
+        "angle": 0,
+        "pattern_density": 0,
+        "pattern_texture": 0,
+        "weight": 0,
+        "saturation": 0,
+        "color": 0,
+        "shape": 0,
+        "enclosure": 0,
+        "connection": 0,
+        "line_pattern": 0,
+        "line_endings": 0,
+        "line_weight": 0
+      },
+      "min_vars": 2,
+      "non_quant_var_rqd": false,
+      "visual_classifications": [
+        "chart"
+      ],
+      "intents": [
+        "comparison"
+      ]
+    }
+    {
+      "name": "Carpet Plot",
+      "encodings": {
+        "position": 1,
+        "labels": 1,
+        "length": 0,
+        "area": 1,
+        "angle": 0,
+        "pattern_density": 0,
+        "pattern_texture": 0,
+        "weight": 0,
+        "saturation": 0,
+        "color": 0,
+        "shape": 0,
+        "enclosure": 0,
+        "connection": 0,
+        "line_pattern": 0,
+        "line_endings": 0,
+        "line_weight": 0
+      },
+      "min_vars": 3,
+      "non_quant_var_rqd": false,
+      "visual_classifications": [
+        "chart"
+      ],
+      "intents": [
+        "comparison"
+      ]
+    }
+    {
+      "name": "Chord Diagram",
+      "encodings": {
+        "position": 1,
+        "labels": 1,
+        "length": 0,
+        "area": 1,
+        "angle": 0,
+        "pattern_density": 0,
+        "pattern_texture": 0,
+        "weight": 0,
+        "saturation": 0,
+        "color": 1,
+        "shape": 0,
+        "enclosure": 0,
+        "connection": 1,
+        "line_pattern": 0,
+        "line_endings": 0,
+        "line_weight": 1
+      },
+      "min_vars": 2,
+      "non_quant_var_rqd": true,
+      "visual_classifications": [
+        "matrix",
+        "chart"
+      ],
+      "intents": [
+        "relationship",
+        "comparison"
+      ]
+    }
+    {
+      "name": "Florence Nightengale Fan",
+      "encodings": {
+        "position": 1,
+        "labels": 1,
+        "length": 0,
+        "area": 1,
+        "angle": 1,
+        "pattern_density": 0,
+        "pattern_texture": 0,
+        "weight": 0,
+        "saturation": 0,
+        "color": 0.5,
+        "shape": 0,
+        "enclosure": 0,
+        "connection": 0,
+        "line_pattern": 0,
+        "line_endings": 0,
+        "line_weight": 0
+      },
+      "min_vars": 1,
+      "non_quant_var_rqd": true,
+      "visual_classifications": [
+        "tree"
+      ],
+      "intents": [
+        "relationship",
+        "composition"
+      ]
+    }
+    {
+      "name": "Temporal Fan Chart",
+      "encodings": {
+        "position": 1,
+        "labels": 1,
+        "length": 1,
+        "area": 0,
+        "angle": 0,
+        "pattern_density": 0,
+        "pattern_texture": 0,
+        "weight": 0,
+        "saturation": 0,
+        "color": 0.5,
+        "shape": 0,
+        "enclosure": 0,
+        "connection": 0,
+        "line_pattern": 1,
+        "line_endings": 0,
+        "line_weight": 0.5
+      },
+      "min_vars": 2,
+      "non_quant_var_rqd": false,
+      "visual_classifications": [
+        "chart",
+        "temporal"
+      ],
+      "intents": [
+        "comparison"
+      ]
+    }
+    {
+      "name": "Log-Log Plot",
+      "encodings": {
+        "position": 0,
+        "labels": 1,
+        "length": 1,
+        "area": 0,
+        "angle": 0,
+        "pattern_density": 0,
+        "pattern_texture": 0,
+        "weight": 0,
+        "saturation": 0,
+        "color": 0.5,
+        "shape": 0,
+        "enclosure": 0,
+        "connection": 0,
+        "line_pattern": 0,
+        "line_endings": 0,
+        "line_weight": 0.5
+      },
+      "min_vars": 2,
+      "non_quant_var_rqd": false,
+      "visual_classifications": [
+        "chart"
+      ],
+      "intents": [
+        "comparison"
+      ]
+    }
+    {
+      "name": "Mosaic Plot",
+      "encodings": {
+        "position": 1,
+        "labels": 1,
+        "length": 0,
+        "area": 1,
+        "angle": 0,
+        "pattern_density": 0,
+        "pattern_texture": 0,
+        "weight": 0,
+        "saturation": 0.5,
+        "color": 0.5,
+        "shape": 0,
+        "enclosure": 0,
+        "connection": 0,
+        "line_pattern": 0,
+        "line_endings": 0,
+        "line_weight": 0
+      },
+      "min_vars": 2,
+      "non_quant_var_rqd": true,
+      "visual_classifications": [
+        "chart",
+        "matrix"
+      ],
+      "intents": [
+        "composition",
+        "comparison"
+      ]
+    }
+    {
+      "name": "Spaghetti Plot",
+      "encodings": {
+        "position": 1,
+        "labels": 1,
+        "length": 1,
+        "area": 0,
+        "angle": 0,
+        "pattern_density": 0,
+        "pattern_texture": 0,
+        "weight": 0,
+        "saturation": 0,
+        "color": 1,
+        "shape": 0,
+        "enclosure": 0,
+        "connection": 0,
+        "line_pattern": 1,
+        "line_endings": 0,
+        "line_weight": 0.5
+      },
+      "min_vars": 2,
+      "non_quant_var_rqd": false,
+      "visual_classifications": [
+        "chart",
+        "temporal",
+        "map"
+      ],
+      "intents": [
+        "comparison",
+        "distribution"
+      ]
+    }
+    {
+      "name": "Temporal Raster Plot",
+      "encodings": {
+        "position": 0,
+        "labels": 1,
+        "length": 0,
+        "area": 1,
+        "angle": 0,
+        "pattern_density": 0,
+        "pattern_texture": 0,
+        "weight": 0,
+        "saturation": 0.5,
+        "color": 0.5,
+        "shape": 0,
+        "enclosure": 0,
+        "connection": 0,
+        "line_pattern": 0,
+        "line_endings": 0,
+        "line_weight": 0
+      },
+      "min_vars": 2,
+      "non_quant_var_rqd": false,
+      "visual_classifications": [
+        "chart"
+      ],
+      "intents": [
+        "composition",
+        "distribution"
+      ]
+    }

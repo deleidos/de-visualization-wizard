@@ -1,0 +1,70 @@
+<form class="wiz-form" ng-submit="processQuestion()" name="questionForm">
+    <!-- domain -->
+    <div class="form-group">
+        <label>Domain
+            <i class="fa fa-info-circle" tooltip-placement="right"
+               uib-tooltip="Select the domain you're working in"></i>
+        </label>
+        <select class="form-control" ng-model="formData.domain" ng-change="selectDomain(formData.domain)"
+            ng-options="item.domain as item.domain for item in domains" ng-required="true"></select>
+    </div>
+    <!-- question input -->
+    <div class="form-group">
+        <label>Question
+            <i class="fa fa-info-circle" tooltip-placement="right"
+               uib-tooltip="Ask a question or choose a topic from left"></i>
+        </label>
+        <i class="thinking-spinner fa fa-circle-o-notch fa-spin" ng-class="{invisible: !isThinking}"></i>
+        <div class="input-group">
+            <input type="text" ng-model="formData.question" class="form-control" ng-required="true">
+            <span class="input-group-btn">
+                <input type="submit" class="btn btn-info" ng-disabled="isThinking || questionForm.$invalid || errorMessage" value="Submit">
+            </span>
+        </div>
+    </div>
+
+    <p ng-show="questionAnalysis.correctedQuestion">
+        Did you mean
+        <a ng-click="correctQuestion()">
+            {{questionAnalysis.correctedQuestion}}
+        </a>
+    </p>
+
+    <!-- results -->
+    <table class="table table-hover options-table" ng-show="topicScores.length && !kmSelected">
+        <thead>
+        <tr>
+            <th>Topic</th>
+            <th>Result</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="topicObj in topicScores | limitTo:3" ng-click="selectTopic(topicObj.topic)"
+            ng-class="{'selected-option': topicObj.topic === selectedTopic}">
+            <td>{{ topicObj.topic }}</td>
+            <td class="result-dot"><i uib-tooltip="{{topicObj.msg}}" class="fa fa-circle"
+                ng-class="{'strong-result': topicObj.strength === 2,
+                           'medium-result': topicObj.strength === 1,
+                           'weak-result': topicObj.strength === 0}"></i>
+            </td>
+            <td><i class="fa fa-arrow-right"></i></td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="table table-hover options-table" ng-if="kmSelected">
+        <thead>
+        <tr>
+            <th>Topic</th>
+            <th></th>
+            <th></th>
+        </tr>
+        </thead>
+        <tr ng-click="selectTopic(selectedNode.name)" ng-class="{'selected-option': selectedNode.name === selectedTopic}">
+            <td>{{ selectedNode.name }}</td>
+            <td></td>
+            <td><i class="fa fa-arrow-right"></i></td>
+        </tr>
+    </table>
+</form>
+

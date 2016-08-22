@@ -1,0 +1,23 @@
+<div class="wiz-form">
+    <div class="form-group">
+        <label>Seed Value
+            <i class="fa fa-info-circle" tooltip-placement="right"
+               uib-tooltip="Include a starting point of data"></i>
+        </label>
+        <input type="text" class="form-control" name="seed" ng-model="formData.seed">
+    </div>
+    <div class="form-group">
+        <label>Interpretation
+            <i class="fa fa-info-circle" tooltip-placement="right"
+               uib-tooltip="Select the type of seed value"></i>
+        </label>
+        <select class="form-control" ng-model="formData.interpretation"
+                ng-options="item.interpretation as item.interpretation for item in interpretations" ng-required="true">
+            <option value=""></option>
+        </select>
+    </div>
+    <div class="text-center">
+        <button type="button" ng-click="dataSetRanking()" class="btn btn-danger">Submit</button>
+    </div>
+</div>
+

@@ -1,0 +1,11 @@
+<div class="wiz-form">
+    <label>{{followUpQuestion}}</label>
+    <table class="table table-hover options-table" style="margin: 20px 0 0 0">
+        <tr ng-repeat="t in followUpAnswers" ng-click="setType(t)"
+            ng-class="{'selected-option': formData.type === t}">
+            <td>{{t}}</td>
+            <td><i class="fa fa-arrow-right"></i></td>
+        </tr>
+    </table>
+</div>
+

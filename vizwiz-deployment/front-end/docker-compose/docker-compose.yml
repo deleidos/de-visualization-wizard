@@ -1,0 +1,26 @@
+nginx-proxy:
+  image: jwilder/nginx-proxy:0.2.0
+  volumes:
+    - "/run/docker.sock:/tmp/docker.sock:ro"
+  ports:
+    - "80:80"
+  mem_limit: 32M
+
+reasoner:
+  image: ${REASONER_IMAGE}:${REASONER_TAG}
+  environment:
+    - VIRTUAL_HOST=${REASONER_HOSTNAME}
+  expose:
+    - "9001"
+  mem_limit: 512M
+  extra_hosts:
+    - "${MODELER_HOSTNAME}:${MODELER_HOST}"
+
+
+vizwiz:
+  image: ${VIZWIZ_IMAGE}:${VIZWIZ_TAG}
+  environment:
+    - VIRTUAL_HOST=${VIZWIZ_HOSTNAME}
+  expose:
+    - "8080"
+  mem_limit: 512M

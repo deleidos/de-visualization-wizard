@@ -1,0 +1,160 @@
+    {
+      "name": "position",
+      "values": "infinite",
+      "identifier": false,
+      "quantitative": true,
+      "ordinal": true,
+      "categorical": true,
+      "relational": true,
+      "group": 6
+    }
+    {
+      "name": "labels",
+      "values": "infinite",
+      "identifier": true,
+      "quantitative": true,
+      "ordinal": true,
+      "categorical": true,
+      "relational": true,
+      "group": 6
+    }
+    {
+      "name": "length",
+      "values": "many",
+      "identifier": false,
+      "quantitative": true,
+      "ordinal": true,
+      "categorical": false,
+      "relational": false,
+      "group": 5
+    }
+    {
+      "name": "area",
+      "values": "many",
+      "identifier": false,
+      "quantitative": true,
+      "ordinal": true,
+      "categorical": false,
+      "relational": false,
+      "group": 5
+    }
+    {
+      "name": "angle",
+      "values": "few",
+      "identifier": false,
+      "quantitative": true,
+      "ordinal": true,
+      "categorical": false,
+      "relational": false,
+      "group": 3
+    }
+    {
+      "name": "pattern_density",
+      "values": "few",
+      "identifier": false,
+      "quantitative": true,
+      "ordinal": true,
+      "categorical": false,
+      "relational": false,
+      "group": 3
+    }
+    {
+      "name": "pattern_texture",
+      "values": "medium",
+      "identifier": false,
+      "quantitative": false,
+      "ordinal": false,
+      "categorical": true,
+      "relational": false,
+      "group": 2
+    }
+    {
+      "name": "weight",
+      "values": "few",
+      "identifier": false,
+      "quantitative": false,
+      "ordinal": true,
+      "categorical": false,
+      "relational": false,
+      "group": 1
+    }
+    {
+      "name": "saturation",
+      "values": "few",
+      "identifier": false,
+      "quantitative": false,
+      "ordinal": true,
+      "categorical": false,
+      "relational": false,
+      "group": 1
+    }
+    {
+      "name": "color",
+      "values": "few",
+      "identifier": false,
+      "quantitative": false,
+      "ordinal": false,
+      "categorical": true,
+      "relational": false,
+      "group": 1
+    }
+    {
+      "name": "shape",
+      "values": "medium",
+      "identifier": false,
+      "quantitative": false,
+      "ordinal": false,
+      "categorical": true,
+      "relational": false,
+      "group": 2
+    }
+    {
+      "name": "enclosure",
+      "values": "many",
+      "identifier": false,
+      "quantitative": false,
+      "ordinal": false,
+      "categorical": true,
+      "relational": true,
+      "group": 4
+    }
+    {
+      "name": "connection",
+      "values": "many",
+      "identifier": false,
+      "quantitative": false,
+      "ordinal": false,
+      "categorical": true,
+      "relational": true,
+      "group": 4
+    }
+    {
+      "name": "line_pattern",
+      "values": "few",
+      "identifier": false,
+      "quantitative": false,
+      "ordinal": false,
+      "categorical": false,
+      "relational": true,
+      "group": 1
+    }
+    {
+      "name": "line_endings",
+      "values": "few",
+      "identifier": false,
+      "quantitative": false,
+      "ordinal": false,
+      "categorical": false,
+      "relational": true,
+      "group": 1
+    }
+    {
+      "name": "line_weight",
+      "values": "few",
+      "identifier": false,
+      "quantitative": false,
+      "ordinal": true,
+      "categorical": false,
+      "relational": false,
+      "group": 1
+    }

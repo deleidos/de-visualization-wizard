@@ -1,0 +1,79 @@
+nginx-proxy:
+  image: jwilder/nginx-proxy:0.2.0
+  volumes:
+    - "/run/docker.sock:/tmp/docker.sock:ro"
+  ports:
+    - "80:80"
+  mem_limit: 32M
+
+mongo:
+  image: mongo:3.2.1
+  expose:
+    - "27017"
+  container_name: mongo
+  mem_limit: 512M
+
+mongo-dataload1:
+  image: mongo:3.2.1
+  volumes:
+    - "../data:/tmp/data"
+  links:
+   - mongo:mongo
+  command: sh -c "exec mongoimport -h mongo -d vizwiz -c Dictonary --file /tmp/data/question-term-dictonary.json --type json"
+  container_name: mongo-dataload1
+
+mongo-dataload2:
+  image: mongo:3.2.1
+  volumes:
+    - "../data:/tmp/data"
+  links:
+   - mongo:mongo
+  command: sh -c "exec mongoimport -h mongo -d vizwiz -c Archetypes --file /tmp/data/visualization-archetypes.json --type json"
+  container_name: mongo-dataload2
+
+mongo-dataload3:
+  image: mongo:3.2.1
+  volumes:
+    - "../data:/tmp/data"
+  links:
+   - mongo:mongo
+  command: sh -c "exec mongoimport -h mongo -d vizwiz -c Encodings --file /tmp/data/visualization-encodings.json --type json"
+  container_name: mongo-dataload3
+
+mongo-dataload4:
+  image: mongo:3.2.1
+  volumes:
+    - "../data:/tmp/data"
+  links:
+   - mongo:mongo
+  command: sh -c "exec mongoimport -h mongo -d vizwiz -c Interpretations --file /tmp/data/data-interpretations.json --type json"
+  container_name: mongo-dataload4
+
+mongo-dataload5:
+  image: mongo:3.2.1
+  volumes:
+    - "../data:/tmp/data"
+  links:
+   - mongo:mongo
+  command: sh -c "exec mongoimport -h mongo -d vizwiz -c PosMapping --file /tmp/data/part-of-speech-mapping.json --type json"
+  container_name: mongo-dataload5
+
+mongo-dataload6:
+  image: mongo:3.2.1
+  volumes:
+    - "../data:/tmp/data"
+  links:
+   - mongo:mongo
+  command: sh -c "exec mongoimport -h mongo -d vizwiz -c Spelling --file /tmp/data/spell-check-corpus.json --type json"
+  container_name: mongo-dataload6
+
+
+modeler:
+  image: ${MODELER_IMAGE}:${TAG}
+  environment:
+    - VIRTUAL_HOST=${MODELER_HOSTNAME}
+  expose:
+    - "9002"
+  links:
+   - mongo:mongo
+  mem_limit: 512M

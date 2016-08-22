@@ -1,0 +1,17 @@
+vizwiz-app/app/bower_components
+**/node_modules
+**/__pycache__
+**/.idea
+**/*.log
+**/*.mdl
+**/*_mdl
+**/NewsCorpus/
+**/ModelStore/
+**/*.db
+**/dist
+**/build
+**/coverage
+**/env
+**/*egg-info
+**/dataORG/
+**/.vagrant

@@ -1,0 +1,104 @@
+<div class="alert alert-success">
+    <i class="fa fa-check-circle-o"></i>&nbsp;<strong>Success!</strong> Visualization Wizard has finished processing successfully.
+    The results are listed below.
+    <span class="alert-link" ng-click="showResultsHelp = !showResultsHelp">How do I read these results?</span><br>
+    <em ng-show="showResultsHelp">The best data sets to answer your question are listed from top to bottom. The best
+        tool to represent the data is listed beside the data set's name in order from left to right.</em>
+</div>
+
+<ul class="data-set-results">
+    <li ng-repeat="dataSet in dataVizRanks | orderBy:'-score' | limitTo:5" ng-class="{'strong-data-result': dataSet.score > 110,
+                                                                          'medium-data-result': dataSet.score < 110 && dataSet.score >= 100,
+                                                                          'weak-data-result': dataSet.score < 100 && dataSet.score > 1,
+                                                                          'bad-data-result': dataSet.score <= 1}">
+        <div class="result-number">{{ $index + 1 }}</div>
+        <p class="pull-left">{{ dataSet.name | limitTo: 25}}<span ng-show="dataSet.name.length > 25">...</span></p>
+        <ul class="pull-right viz-results">
+            <li ng-repeat="viz in dataSet.viz_ranks | orderBy:'-score' | limitTo:4" ng-click="pickViz(viz, dataSet)"
+                uib-popover="{{ viz.name }}" popover-trigger="mouseenter" popover-popup-delay="200">
+                <img ng-src="{{viz.thumbnail}}">
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<script type="text/ng-template" id="more-details.html">
+    <div class="modal-header"><h3 class="modal-title">{{dataSet.name}} - {{viz.name}}</h3></div>
+    <div class="modal-body more-details">
+        <div class="row">
+            <div class="col-md-4">
+                <p><strong>Connection Type</strong></p>
+                <p>{{dataSet.data.connection_type}}</p>
+            </div>
+            <div class="col-md-4">
+                <p><strong>Delivery Mechanism</strong></p>
+                <p>{{dataSet.data.delivery_mechanism}}</p>
+            </div>
+            <div class="col-md-4">
+                <p><strong>Analytic Type</strong></p>
+                <p>{{dataSet.data.analytic_type}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <p><strong>Data State</strong></p>
+                <p>{{dataSet.data.data_state}}</p>
+            </div>
+            <div class="col-md-4">
+                <p><strong>Domain</strong></p>
+                <p>{{dataSet.data.domain}}</p>
+            </div>
+            <div class="col-md-4">
+                <p><strong>Intents</strong></p>
+                <p>
+                    <em ng-show="!dataSet.data.intents.length">None</em>
+                    <span ng-repeat="intent in dataSet.data.intents">
+                        {{intent}}<span ng-if="!$last">, </span>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 data-field-list">
+                <p><strong>Data Fields</strong></p>
+                <ul>
+                    <li ng-repeat="dataField in dataSet.data.data" title="{{dataField.fullName}}">{{dataField.displayName}}</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <p><strong>{{viz.name}}</strong></p>
+                <br>
+                <img ng-src="{{viz.thumbnail}}" title="{{viz.name}}">
+            </div>
+            <div class="col-md-4">
+                <p><strong>Visual Classifications</strong></p>
+                <p>
+                    <em ng-show="!viz.viz_classifications.length">None</em>
+                    <span ng-repeat="classification in viz.viz_classifications">
+                        {{classification}}<span ng-if="!$last">, </span>
+                    </span>
+                </p>
+                <br>
+                <p><strong>Visual Interpretations</strong></p>
+                <p>
+                    <em ng-show="!viz.interpretations.length">None</em>
+                    <span ng-repeat="interpretation in viz.interpretations">
+                        {{interpretation}}<span ng-if="!$last">, </span>
+                    </span>
+                </p>
+                <br>
+                <p><strong>Visualization Domains</strong></p>
+                <p>
+                    <em ng-show="!viz.domains.length">None</em>
+                    <span ng-repeat="domain in viz.domains">
+                        {{domain}}<span ng-if="!$last">, </span>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" ng-click="select()">Select</button>
+        <button class="btn btn-default" ng-click="cancel()">Cancel</button>
+    </div>
+</script>

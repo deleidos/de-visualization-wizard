@@ -1,0 +1,53 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  
+  # you can change this to more or less memory
+  config.vm.provider :virtualbox do |vb|
+    vb.customize ["modifyvm", :id, "--memory", 2048, "--cpus", 1]
+  end
+
+  config.vm.synced_folder "../../language-processing-service", "/home/vagrant/language-processing-service"
+  config.vm.synced_folder "../../vizwiz-app", "/home/vagrant/vizwiz-app"
+  config.vm.synced_folder "..", "/home/vagrant/vizwiz-deploy"
+
+
+  config.vm.provision :shell, :inline => <<-EOT
+    apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+	echo 'deb https://apt.dockerproject.org/repo ubuntu-trusty main' > /etc/apt/sources.list.d/docker.list
+	apt-get update
+	apt-get purge lxc-docker
+	apt-cache policy docker-engine
+	apt-get install -y linux-image-extra-$(uname -r)
+	apt-get update
+	apt-get install -y docker-engine
+	service docker start
+	systemctl enable docker
+	docker info
+	docker run --name hello hello-world
+	docker rm hello
+	cp -Rp /root/.docker /home/vagrant/.
+
+	curl -L https://github.com/docker/compose/releases/download/1.8.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+	chmod +x /usr/local/bin/docker-compose
+
+    curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+    sudo apt-get install -y nodejs
+    npm install -g bower
+    npm install -g grunt-cli
+  EOT
+  
+  config.vm.define "frontend" do |frontend|
+    frontend.vm.box = "ubuntu/trusty64"
+    frontend.vm.box_version = "20160222.0.0"
+    frontend.vm.network "private_network", type: "dhcp"
+  end
+  config.vm.define "backend" do |backend|
+    backend.vm.box = "ubuntu/trusty64"
+    backend.vm.box_version = "20160222.0.0"
+    backend.vm.network "private_network", type: "dhcp"
+  end
+end

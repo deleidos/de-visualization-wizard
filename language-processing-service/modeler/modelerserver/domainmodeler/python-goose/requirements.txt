@@ -1,0 +1,7 @@
+Pillow
+lxml
+cssselect
+jieba
+#beautifulsoup
+bs4
+nltk

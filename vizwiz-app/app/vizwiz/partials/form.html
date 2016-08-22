@@ -1,0 +1,45 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div id="form-container">
+                <div class="page-header text-center">
+                    <!-- the links to our nested states using relative paths -->
+                    <!-- add the active class if the state matches our ui-sref -->
+                    <div id="status-buttons" class="text-center">
+                        <a ui-sref-active="active" ui-sref=".question"><span>1</span>Question</a>
+                        <a ui-sref-active="active" ui-sref=".follow-up" ng-disabled="disableSpecifics"><span>2</span>Specifics</a>
+                        <a ui-sref-active="active" ui-sref=".data-sets" ng-disabled="disableSeedValue"><span>3</span>Data Sets</a>
+                        <a ui-sref-active="active" ui-sref=".results" class="results" ng-disabled="disableResults"><span>4</span>Results</a>
+                        <a ng-show="showRestart" ng-click="startOver()"><span><i class="fa fa-repeat fa-flip-horizontal"></i></span>Start Over</a>
+                    </div>
+                </div>
+
+                <!-- our nested state views will be injected here -->
+                <div id="form-views" ui-view>
+                    <div class="wiz-form">
+                        <div class="form-group text-center">
+                            <label>Getting Started</label>
+                            <p>Welcome to the Visualization Wizard tool! We will begin by asking you a series of
+                                questions.</p>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-xs-6 col-xs-offset-3">
+                                <a ui-sref="vizwiz.question" class="btn btn-block btn-info">
+                                    Let's Go! <span class="glyphicon glyphicon-circle-arrow-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <br>
+                <div class="alert alert-danger" ng-if="errorMessage && $location.path() !== '/'"><i class="fa fa-times-circle"></i>&nbsp;{{ errorMessage }}</div>
+                <div class="alert alert-warning" ng-if="warningMessage && $location.path() === '/question'"><i class="fa fa-warning"></i>&nbsp;{{ warningMessage }}</div>
+            </div>
+        </div>
+        <div id="taxonomy-tree" class="col-md-2 col-sm-4 col-md-pull-9 col-md-offset-0 col-sm-offset-4">
+            <tree nodes='treeNodes' ng-if="$location.path() == '/question' && treeNodes"></tree>
+        </div>
+    </div>
+</div>

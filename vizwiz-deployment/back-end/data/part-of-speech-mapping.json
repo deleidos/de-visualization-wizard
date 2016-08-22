@@ -1,0 +1,144 @@
+    {
+      "code": "CC",
+      "text": "Coordinating conjunction"
+    }
+    {
+      "code": "CD",
+      "text": "Cardinal number"
+    }
+    {
+      "code": "DT",
+      "text": "Determiner"
+    }
+    {
+      "code": "EX",
+      "text": "Existential there"
+    }
+    {
+      "code": "FW",
+      "text": "Foreign word"
+    }
+    {
+      "code": "IN",
+      "text": "Preposition or subordinating conjunction"
+    }
+    {
+      "code": "JJ",
+      "text": "Adjective"
+    }
+    {
+      "code": "JJR",
+      "text": "Adjective, comparative"
+    }
+    {
+      "code": "JJS",
+      "text": "Adjective, superlative"
+    }
+    {
+      "code": "LS",
+      "text": "List item marker"
+    }
+    {
+      "code": "MD",
+      "text": "Modal"
+    }
+    {
+      "code": "NN",
+      "text": "Noun, singular or mass"
+    }
+    {
+      "code": "NNS",
+      "text": "Noun, plural"
+    }
+    {
+      "code": "NNP",
+      "text": "Proper noun, singular"
+    }
+    {
+      "code": "NNPS",
+      "text": "Proper noun, plural"
+    }
+    {
+      "code": "PDT",
+      "text": "Predeterminer"
+    }
+    {
+      "code": "text",
+      "text": "Possessive ending"
+    }
+    {
+      "code": "PRP",
+      "text": "Personal pronoun"
+    }
+    {
+      "code": "PRP$",
+      "text": "Possessive pronoun"
+    }
+    {
+      "code": "RB",
+      "text": "Adverb"
+    }
+    {
+      "code": "RBR",
+      "text": "Adverb, comparative"
+    }
+    {
+      "code": "RBS",
+      "text": "Adverb, superlative"
+    }
+    {
+      "code": "RP",
+      "text": "Particle"
+    }
+    {
+      "code": "SYM",
+      "text": "Symbol"
+    }
+    {
+      "code": "TO",
+      "text": "to"
+    }
+    {
+      "code": "UH",
+      "text": "Interjection"
+    }
+    {
+      "code": "VB",
+      "text": "Verb, base form"
+    }
+    {
+      "code": "VBD",
+      "text": "Verb, past tense"
+    }
+    {
+      "code": "VBG",
+      "text": "Verb, gerund or present participle"
+    }
+    {
+      "code": "VBN",
+      "text": "Verb, past participle"
+    }
+    {
+      "code": "VBP",
+      "text": "Verb, non-3rd person singular present"
+    }
+    {
+      "code": "VBZ",
+      "text": "Verb, 3rd person singular present"
+    }
+    {
+      "code": "WDT",
+      "text": "Wh-determiner"
+    }
+    {
+      "code": "WP",
+      "text": "Wh-pronoun"
+    }
+    {
+      "code": "WP$",
+      "text": "Possessive wh-pronoun"
+    }
+    {
+      "code": "WRB",
+      "text": "Wh-adverb"
+    }

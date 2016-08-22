@@ -1,0 +1,692 @@
+
+    {
+      "word": "is",
+      "type": "deterministic",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "are",
+      "type": "deterministic",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "am",
+      "type": "deterministic",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "was",
+      "type": "deterministic",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "were",
+      "type": "deterministic",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "will",
+      "type": "deterministic",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "do",
+      "type": "deterministic",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "does",
+      "type": "deterministic",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "did",
+      "type": "deterministic",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "have",
+      "type": "deterministic",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "had",
+      "type": "deterministic",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "has",
+      "type": "deterministic",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "can",
+      "type": "deterministic",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "could",
+      "type": "deterministic",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "should",
+      "type": "deterministic",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "shall",
+      "type": "deterministic",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "may",
+      "type": "deterministic",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "might",
+      "type": "deterministic",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "would",
+      "type": "deterministic",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "what",
+      "type": "open",
+      "rankUp": [
+        "chart",
+        "tree"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "when",
+      "type": "open",
+      "rankUp": [
+        "temporal",
+        "tree",
+        "chart"
+      ],
+      "rankDown": [
+        "map"
+      ]
+    }
+
+    {
+      "word": "why",
+      "type": "open",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "where",
+      "type": "open",
+      "rankUp": [
+        "map",
+        "chart"
+      ],
+      "rankDown": [
+        "temporal"
+      ]
+    }
+
+    {
+      "word": "who",
+      "type": "open",
+      "rankUp": [
+        "network",
+        "tree"
+      ],
+      "rankDown": [
+        "temporal",
+        "map"
+      ]
+    }
+
+    {
+      "word": "how",
+      "type": "open",
+      "secondary": [
+        {
+          "word": "often",
+          "rankUp": [
+            "temporal",
+            "chart",
+            "tree"
+          ],
+          "rankDown": [
+            "map"
+          ]
+        },
+        {
+          "word": "far",
+          "rankUp": [
+            "map",
+            "chart"
+          ],
+          "rankDown": [
+            ""
+          ]
+        },
+        {
+          "word": "much",
+          "rankUp": [
+            "chart"
+          ],
+          "rankDown": [
+            "temporal"
+          ]
+        },
+        {
+          "word": "many",
+          "rankUp": [
+            "chart"
+          ],
+          "rankDown": [
+            "map"
+          ]
+        },
+        {
+          "word": "fast",
+          "rankUp": [
+            "chart"
+          ],
+          "rankDown": [
+            ""
+          ]
+        },
+        {
+          "word": "old",
+          "rankUp": [
+            "chart",
+            "temporal"
+          ],
+          "rankDown": [
+            "map"
+          ]
+        },
+        {
+          "word": "well",
+          "rankUp": [
+            "chart",
+            "network"
+          ],
+          "rankDown": [
+            "temporal"
+          ]
+        },
+        {
+          "word": "long",
+          "rankUp": [
+            "temporal",
+            "chart"
+          ],
+          "rankDown": [
+            "map"
+          ]
+        }
+      ]
+    }
+
+    {
+      "word": "which",
+      "type": "open",
+      "rankUp": [
+        "chart",
+        "tree"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "whom",
+      "type": "open",
+      "rankUp": [
+        "network",
+        "tree"
+      ],
+      "rankDown": [
+        "temporal",
+        "map"
+      ]
+    }
+
+    {
+      "word": "whose",
+      "type": "open",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "wherefore",
+      "type": "open",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "whatever",
+      "type": "open",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "wherewith",
+      "type": "open",
+      "rankUp": [
+        "chart",
+        "tree"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "whither",
+      "type": "open",
+      "rankUp": [
+        "map",
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "whence",
+      "type": "open",
+      "rankUp": [
+        "temporal",
+        "tree",
+        "chart"
+      ],
+      "rankDown": [
+        "map"
+      ]
+    }
+
+    {
+      "word": "however",
+      "type": "open",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "define",
+      "type": "command",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "describe",
+      "type": "command",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "give",
+      "type": "command",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "identify",
+      "type": "command",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "list",
+      "type": "command",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "name",
+      "type": "command",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "outline",
+      "type": "command",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "state",
+      "type": "command",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "suggest",
+      "type": "command",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "compare",
+      "type": "command",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "distinguish",
+      "type": "command",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "explain",
+      "type": "command",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "discuss",
+      "type": "command",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "justify",
+      "type": "command",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "analyse",
+      "type": "command",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "analyze",
+      "type": "command",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "contrast",
+      "type": "command",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "assess",
+      "type": "command",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "examine",
+      "type": "command",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "explore",
+      "type": "command",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }
+
+    {
+      "word": "evaluate",
+      "type": "command",
+      "rankUp": [
+        "chart"
+      ],
+      "rankDown": [
+        ""
+      ]
+    }

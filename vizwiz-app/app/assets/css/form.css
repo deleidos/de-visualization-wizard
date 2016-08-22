@@ -1,0 +1,295 @@
+/* style.css */
+/* BASIC STYLINGS
+============================================================================= */
+body {
+    padding-top: 0;
+}
+
+/* form styling */
+#form-container {
+    /*background: #2f2f2f;*/
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+#form-container .page-header {
+    /*background: #151515;*/
+    margin: 0;
+    padding: 30px 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#form-container .white {
+    color: white;
+}
+
+#status-buttons a {
+    color: #000;
+    display: inline-block;
+    width: 8em;
+    font-size: 12px;
+    margin-right: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#status-buttons a:hover,
+#status-buttons a:active,
+#status-buttons a:focus {
+    text-decoration: none;
+}
+
+/* we will style the span as the circled number */
+#status-buttons a span {
+    background: #45174f;
+    color: white;
+    display: block;
+    height: 30px;
+    margin: 0 auto 10px;
+    padding-top: 6px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+/* active buttons turn light green-blue*/
+#status-buttons a.active span {
+    background: #b43acd;
+}
+
+#status-buttons a[disabled] {
+    pointer-events: none;
+    text-decoration: none;
+    color: #aaa;
+}
+
+#status-buttons a[disabled] span {
+    background-color: #8a8a8a;
+}
+
+#status-buttons a.results {
+    border-left: 1px solid black;
+}
+
+/* style.css */
+/* ANIMATION STYLINGS
+============================================================================= */
+#signup-form {
+    position: relative;
+    min-height: 300px;
+    overflow: hidden;
+    padding: 30px;
+}
+
+#form-views {
+    width: auto;
+}
+
+/* basic styling for entering and leaving */
+/* left and right added to ensure full width */
+#form-views.ng-enter,
+#form-views.ng-leave {
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    -webkit-transition: 0.5s all ease;
+}
+
+/* enter animation */
+#form-views.ng-enter {
+    -webkit-animation: slideInRight 0.5s both ease;
+    -moz-animation: slideInRight 0.5s both ease;
+    animation: slideInRight 0.5s both ease;
+}
+
+/* leave animation */
+#form-views.ng-leave {
+    -webkit-animation: slideOutLeft 0.5s both ease;
+    -moz-animation: slideOutLeft 0.5s both ease;
+    animation: slideOutLeft 0.5s both ease;
+}
+
+/* ANIMATIONS
+============================================================================= */
+/* slide out to the left */
+@keyframes slideOutLeft {
+    to {
+        transform: translateX(-200%);
+    }
+}
+
+@-moz-keyframes slideOutLeft {
+    to {
+        -moz-transform: translateX(-200%);
+    }
+}
+
+@-webkit-keyframes slideOutLeft {
+    to {
+        -webkit-transform: translateX(-200%);
+    }
+}
+
+/* slide in from the right */
+@keyframes slideInRight {
+    from {
+        transform: translateX(200%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@-moz-keyframes slideInRight {
+    from {
+        -moz-transform: translateX(200%);
+    }
+    to {
+        -moz-transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes slideInRight {
+    from {
+        -webkit-transform: translateX(200%);
+    }
+    to {
+        -webkit-transform: translateX(0);
+    }
+}
+
+/* VIZ LIST
+============================================================================= */
+.strong-weak-arrows {
+    bottom: 205px;
+    position: absolute;
+    padding: 10px;
+    width: 100%;
+}
+
+.visual-list {
+    position: absolute;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 450px;
+    width: 100%;
+    padding: 0 15px;
+    bottom: 20px;
+}
+
+.visual-item {
+    border: 1px solid #cccccc;
+    background: #ffffff;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+    margin-right: 10px;
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    border-radius: 10px 10px;
+}
+
+@media (max-height: 800px) {
+    .visual-list {
+        height: 140px;
+        padding: 0 15px;
+    }
+
+    .visual-item {
+        height: 120px;
+        width: 120px;
+    }
+
+    .strong-weak-arrows {
+        bottom: 165px;
+    }
+}
+
+.visual-item img {
+    border-bottom: 1px solid #b43acd;
+}
+
+.visual-item .title {
+    font: 26px/1 'Cuprum', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.6);
+    font-size: 10px;
+    color: #333;
+    margin-top: 8px;
+    display: block;
+}
+
+.visual-item .description {
+    font-family: Helvetica, Arial, 'lucida grande', tahoma, verdana, arial, sans-serif;
+    font-size: 10px;
+    color: #999;
+    margin-top: 2px;
+    display: block;
+}
+
+.visual-item .rank {
+    font-family: Helvetica, Arial, 'lucida grande', tahoma, verdana, arial, sans-serif;
+    font-size: 24px;
+    color: #722373;
+    margin-top: 4px;
+    float: right;
+    display: inline-block;
+}
+
+.first {
+    width: 70%;
+    float: left; /* add this */
+}
+
+.second {
+    float: right; /* add this */
+}
+
+.visual-item img {
+    margin-left: -6px;
+    width: 110%;
+    height: 50%;
+    vertical-align: top;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+    background-color: #fff;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.list-inline {
+    white-space: nowrap;
+}
+
+.effect {
+    position: relative;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.effect:before, .effect:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    border-radius: 100px / 10px;
+}
+
+.effect:after {
+    right: 10px;
+    left: auto;
+    transform: skew(8deg) rotate(3deg);
+}
+
+
+/* DATA TABLE
+============================================================================= */
+.grid {
+    width: 500px;
+    height: 20px;
+}
