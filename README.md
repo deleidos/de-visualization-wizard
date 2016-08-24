@@ -180,11 +180,13 @@ REASONER_IMAGE=
 REASONER_TAG=
 REASONER_HOSTNAME
 MODELER_HOSTNAME=
+MODELER_HOST=
 
 VIZWIZ_IMAGE=
 VIZWIZ_TAG=
 VIZWIZ_HOSTNAME=
 ```
+> *Note*: MODELER_HOST is just the IP of the modeler instance - not the container
 
 de-visualization-wizard/vizwiz-deployment/back-end/docker-compose/.env
 ```
