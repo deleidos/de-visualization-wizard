@@ -19,7 +19,7 @@ mongo-dataload1:
     - "../data:/tmp/data"
   links:
    - mongo:mongo
-  command: sh -c "exec mongoimport -h mongo -d vizwiz -c Dictionary --file /tmp/data/question-term-dictonary.json --type json"
+  command: sh -c "exec mongoimport -h mongo -d vizwiz -c Dictionary --file /tmp/data/question-term-dictionary.json --type json"
   container_name: mongo-dataload1
 
 mongo-dataload2:
