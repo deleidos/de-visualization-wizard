@@ -119,9 +119,9 @@ class DataMatcher:
                 enc_val = VALS_LIST.index(encoding['values'])
                 data_val = VALS_LIST.index(vals)
                 if enc_val > data_val:
-                    step_score -= (enc_val - data_val) * 0.25
+                    step_score -= (enc_val - data_val) * 0.1
                 elif enc_val < data_val:
-                    step_score -= (data_val - enc_val) * 0.1
+                    step_score -= (data_val - enc_val) * 0.25
 
                 group_score = 1 - (0.2 * group_list.index(encoding['group']))
                 if (attrs['quantitative'] and encoding['name'] == 'position'):
